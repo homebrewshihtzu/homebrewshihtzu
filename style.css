@@ -27,7 +27,7 @@ header {
 nav {
   max-width: 1100px;
   margin: auto;
-  padding: 20px;
+  padding: 20px 40px;
 
   display: flex;
   justify-content: space-between;
@@ -41,6 +41,10 @@ nav {
   font-size: 1.3rem;
 }
 
+.logo:first-letter {
+  color: #8a6f5a;
+}
+
 .nav-links {
   display: flex;
   gap: 25px;
@@ -49,9 +53,11 @@ nav {
 .nav-links a {
   color: #333;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
+  color: #8a6f5a;
   text-decoration: underline;
 }
 
@@ -78,16 +84,17 @@ nav {
 }
 
 .small-label {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 0.8rem;
+  color: #8a6f5a;
   font-weight: bold;
-  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
 }
 
 .welcome h1 {
   font-size: 4rem;
   margin-bottom: 20px;
+  letter-spacing: -1px;
 }
 
 .intro {
@@ -110,14 +117,14 @@ nav {
 .button {
   display: inline-block;
 
-  padding: 12px 24px;
+  padding: 13px 26px;
 
   background: #333;
   color: white;
 
   text-decoration: none;
 
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .button:hover {
@@ -141,6 +148,17 @@ nav {
 .contact h2 {
   font-size: 2.4rem;
   margin-bottom: 20px;
+}
+
+.section h2::after,
+.contact h2::after {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  margin: 12px auto 0;
+  background: #8a6f5a;
+  border-radius: 3px;
 }
 
 .section p {
@@ -213,6 +231,13 @@ nav {
   width: 300px;
   display: flex;
   flex-direction: column;
+  padding: 15px;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(90, 70, 55, 0.12);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .puppy-card img {
@@ -222,6 +247,8 @@ nav {
   object-fit: cover;
 
   border-radius: 10px;
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
 .puppy-card h4 {
