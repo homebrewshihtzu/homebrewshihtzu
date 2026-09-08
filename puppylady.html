@@ -1,0 +1,110 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Lady | Homebrew Shih Tzu</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+
+    <header>
+      <nav>
+        <a href="index.html" class="logo">🐾︎ Homebrew Shih Tzu</a>
+
+        <div class="nav-links">
+          <a href="index.html#about">About Us</a>
+
+          <a href="index.html#puppies">Puppies</a>
+
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Lady's Gallery -->
+
+    <main>
+      <section class="section">
+        <p class="small-label">Meet Lady</p>
+
+        <h1>Lady</h1>
+
+        <p class="puppy-details"><span id="puppy-age"></span> weeks old</p>
+
+        <script>
+          const birthDate = new Date("June 22, 2026");
+          const today = new Date();
+
+          const difference = today - birthDate;
+          const weeksOld = Math.floor(difference / (1000 * 60 * 60 * 24 * 7));
+
+          document.getElementById("puppy-age").textContent = weeksOld;
+        </script>
+
+        <p>
+          Lady is Bella’s youngest born of her first litter. She is a sweet,
+          friendly, playful little puppy who loves to explore and hop around
+          happily.
+        </p>
+
+        <!-- Back to Puppies -->
+
+        <p>
+          <a href="puppies.html" class="back-link">← Back to Our Puppies</a>
+        </p>
+
+        <!-- Additional Photos -->
+
+        <div class="individual-puppy-gallery">
+          <img src="images/Lady6weeks.JPG" alt="Lady" />
+
+          <img src="images/Lady9weeks.JPG" alt="Lady" />
+
+          <img src="images/LadyFall2026.JPG" alt="Lady" />
+
+          <img src="images/LadyYawning.JPG" alt="Lady" />
+
+          <img src="images/Lady10weeks.JPG" alt="Lady" />
+
+          <img src="images/LadyInCauldron.JPG" alt="Lady" />
+        </div>
+      </section>
+
+      <!-- Contact -->
+
+      <section id="contact" class="contact">
+        <p class="small-label">Get in touch</p>
+
+        <h2>Thinking about adding a Shih Tzu to your family?</h2>
+
+        <p>
+          We'd love to hear from you and answer any questions you may have about
+          our dogs and puppies.
+        </p>
+
+        <a href="mailto:homebrewshihtzu@gmail.com" class="button">
+          Contact Us
+        </a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+      <p>© 2026 Homebrew Shih Tzu</p>
+
+      <div class="social-links">
+        <a href="#" target="_blank">Instagram</a>
+
+        <a href="#" target="_blank">TikTok</a>
+      </div>
+    </footer>
+  </body>
+</html>
