@@ -375,8 +375,11 @@ footer {
   }
 
   .puppy-gallery {
-    flex-direction: column;
-    align-items: center;
+    max-height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
   }
 
   .puppy-card {
