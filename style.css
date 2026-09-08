@@ -269,17 +269,10 @@ nav {
   gap: 30px;
 }
 
-.individual-puppy-gallery .photo-placeholder {
-  max-width: none;
-  width: 100%;
-  height: 350px;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 .individual-puppy-gallery img {
   width: 100%;
   height: auto;
+  display: block;
   border-radius: 10px;
 }
 
