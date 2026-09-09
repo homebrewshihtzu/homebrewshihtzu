@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Puppy Questionnaire</title>
+</head>
+
+<form action="YOUR-FORMSPREE-URL" method="POST">
+  <p>
+    <label
+      >Name:<br />
+      <input type="text" name="name" maxlength="100" required />
+    </label>
+  </p>
+
+  <p>
+    <label
+      >Phone:<br />
+      <input type="tel" name="phone" />
+    </label>
+  </p>
+
+  <p>
+    <label
+      >Email:<br />
+      <input type="email" name="email" maxlength="150" required />
+    </label>
+  </p>
+
+  <p>
+    <label
+      >City/State:<br />
+      <input type="text" name="location" maxlength="100" />
+    </label>
+  </p>
+
+  <p>
+    <label
+      >Which puppy are you interested in?<br />
+      <input type="text" name="puppy" maxlength="100" required />
+    </label>
+  </p>
+
+  <p>
+    <label
+      >1. Who will be the primary caregiver for the puppy?<br />
+      <textarea name="caregiver" maxlength="1000" rows="3"></textarea>
+    </label>
+  </p>
+  <p>
+    <label
+      >2. Who lives in your household? Please include children and their
+      ages.<br />
+      <textarea name="household" maxlength="1000" rows="3"></textarea>
+    </label>
+  </p>
+  <p>
+    <label
+      >3. Do you currently have other pets? If yes, please list the type, age,
+      and whether they are spayed/neutered.<br />
+      <textarea name="pets" maxlength="1000" rows="4"></textarea>
+    </label>
+  </p>
+  <p>
+    <label
+      >4. Have you owned a dog before? Have you ever owned a Shih Tzu?<br />
+      <textarea name="dog_experience" maxlength="1000" rows="3"></textarea>
+    </label>
+  </p>
+  <p>
+    <label
+      >5. What type of home do you live in?<br />
+      <select name="home_type">
+        <option value="">Please select</option>
+        <option value="House">House</option>
+        <option value="Apartment">Apartment</option>
+        <option value="Condo">Condo</option>
+        <option value="Other">Other</option>
+      </select>
+    </label>
+  </p>
+  <p>
+    <label
+      >If other, please explain:<br />
+      <textarea name="home_other" maxlength="500" rows="2"></textarea>
+    </label>
+  </p>
+  <p>
+    <label
+      >6. Do you own or rent your home? If renting, are dogs/pets permitted?<br />
+      <textarea name="ownership" maxlength="1000" rows="3"></textarea>
+    </label>
+  </p>
+  <p>
+    <label
+      >7. Will the puppy be kept primarily indoors?<br />
+      <select name="indoors">
+        <option value="">Please select</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </label>
+  </p>
+  <p>
+    <label
+      >8. About how many hours will the puppy normally be left alone during the
+      day?<br />
+      <input type="text" name="alone_hours" maxlength="100" />
+    </label>
+  </p>
+  <button type="submit" class="button">Submit</button>
+
+</form>

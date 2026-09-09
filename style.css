@@ -116,15 +116,14 @@ nav {
 
 .button {
   display: inline-block;
-
   padding: 13px 26px;
-
   background: #333;
   color: white;
-
   text-decoration: none;
-
   border-radius: 8px;
+  border: none;
+  font: inherit;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -279,6 +278,10 @@ nav {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
 }
 
+.mobile-gallery-link {
+  display: none;
+}
+
 /* --------------------
    Back Link
 -------------------- */
@@ -328,6 +331,12 @@ nav {
     flex-direction: column;
     align-items: center;
   }
+
+  @media (max-width: 600px) {
+  .mobile-gallery-link {
+    display: block;
+  }
+}
 }
 
 /* --------------------
@@ -356,6 +365,34 @@ footer {
 
   background: #333;
   color: white;
+}
+
+/* --------------------
+   Questionnaire
+-------------------- */
+
+form {
+  max-width: 650px;
+  margin: 40px auto;
+}
+
+form p {
+  margin-bottom: 20px;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font: inherit;
+}
+
+form select {
+  height: 45px;
 }
 
 /* --------------------

@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Lady | Homebrew Shih Tzu</title>
+    <title>Puppy Name | Homebrew Shih Tzu</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -28,30 +28,31 @@
       </nav>
     </header>
 
-    <!-- Lady's Gallery -->
+    <!-- Puppy Name's Gallery -->
 
     <main>
       <section class="section">
-        <p class="small-label">Meet Lady</p>
+        <p class="small-label">Meet Puppy Name</p>
 
-        <h1>Lady</h1>
+        <h1>Puppy Name</h1>
 
         <p class="puppy-details"><span id="puppy-age"></span> weeks old</p>
 
         <script>
-          const birthDate = new Date("June 22, 2026");
+          const birthDate = "";
           const today = new Date();
 
-          const difference = today - birthDate;
-          const weeksOld = Math.floor(difference / (1000 * 60 * 60 * 24 * 7));
-
-          document.getElementById("puppy-age").textContent = weeksOld;
+          if (birthDate) {
+            const difference = today - new Date(birthDate);
+            const weeksOld = Math.floor(difference / (1000 * 60 * 60 * 24 * 7));
+            document.getElementById("puppy-age").textContent = weeksOld;
+          } else {
+            document.getElementById("puppy-age").textContent = "—";
+          }
         </script>
 
         <p>
-          Lady is Bella’s youngest born of her first litter. She is a sweet,
-          friendly, playful little puppy who loves to explore and hop around
-          happily.
+          Here is a little description about Puppy Name. 
         </p>
 
         <!-- Back to Puppies -->
@@ -63,19 +64,9 @@
         <!-- Additional Photos -->
 
         <div class="individual-puppy-gallery">
-          <img src="images/Lady6weeks.JPG" alt="Lady" />
-
-          <img src="images/Lady9weeks.JPG" alt="Lady" />
-
-          <img src="images/LadyFall2026.JPG" alt="Lady" />
-
-          <img src="images/LadyYawning.JPG" alt="Lady" />
-
-          <img src="images/Lady10weeks.JPG" alt="Lady" />
-
-          <img src="images/LadyInCauldron.JPG" alt="Lady" />
+          <p>PHOTOS GO HERE</p>
         </div>
-        
+
         <p>
           <a href="puppies.html" class="back-link">← Back to Our Puppies</a>
         </p>
@@ -99,7 +90,7 @@
       </section>
     </main>
 
-     <!-- Footer -->
+    <!-- Footer -->
     <footer>
       <p>Follow HomebrewShihTzu:</p>
 
