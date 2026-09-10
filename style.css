@@ -372,6 +372,7 @@ footer {
 -------------------- */
 
 form {
+  text-align: left;
   max-width: 650px;
   margin: 40px auto;
 }
