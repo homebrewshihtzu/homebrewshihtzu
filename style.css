@@ -298,7 +298,6 @@ nav {
   text-decoration: underline;
 }
 
-
 /* --------------------
    Happily Home Puppies 
 -------------------- */
@@ -328,16 +327,16 @@ nav {
   }
 
   .individual-puppy-gallery {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
   @media (max-width: 600px) {
-  .mobile-gallery-link {
-    display: block;
+    .mobile-gallery-link {
+      display: block;
+    }
   }
-}
 }
 
 /* --------------------
@@ -435,4 +434,12 @@ form select {
   .welcome h1 {
     font-size: 2.7rem;
   }
+
+  /* ==========================================================================
+   Utility Classes
+   ========================================================================== */
+  .hidden {
+    display: none !important;
+  }
+  
 }
