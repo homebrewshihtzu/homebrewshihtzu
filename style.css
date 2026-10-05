@@ -144,6 +144,10 @@ nav {
   text-align: center;
 }
 
+#puppies {
+  padding-top: 20px !important;    /* Overrides the 90px top wall down to a clean 20px right now */
+}
+
 .section h2,
 .contact h2 {
   font-size: 2.4rem;
