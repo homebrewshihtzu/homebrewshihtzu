@@ -383,6 +383,26 @@ footer {
   color: white;
 }
 
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;                  
+  margin: 15px 0;
+}
+
+footer .social-links a {
+  color: #8c7365;             
+  font-size: 28px;            
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+footer .social-links a:hover {
+  color: #bfa393;             
+  transform: translateY(-4px); 
+}
+
 /* --------------------
    Questionnaire
 -------------------- */
