@@ -42,7 +42,7 @@
           const today = new Date();
 
           if (birthDate) {
-            const difference = today - new Date(birthDate);
+            const difference = today - new Date(birthDate); //Example: "June 22, 2026";
             const weeksOld = Math.floor(difference / (1000 * 60 * 60 * 24 * 7));
             document.getElementById("puppy-age").textContent = weeksOld;
           } else {
